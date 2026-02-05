@@ -34,6 +34,8 @@ Pig::Pig(sf::Vector2f worldSize)
 
 	m_currentAnimation = &m_walkDown;
 	setTextureRect(m_currentAnimation->getCurrentFrame());
+
+	setCollisionBox(2, 2, 60, 60);
 }
 
 Pig::~Pig()

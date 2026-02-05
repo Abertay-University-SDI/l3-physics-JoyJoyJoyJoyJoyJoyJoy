@@ -34,6 +34,9 @@ Level::Level(sf::RenderWindow& hwnd, Input& in) :
 		new_pig->setPosition(pig_locations[i]);	
 		m_pigPointers.push_back(new_pig);
 	}
+
+	m_sheep.setWorldSize({background_size, background_size});
+
 	
 	m_gameOver = false;	// haven't lost yet.
 
